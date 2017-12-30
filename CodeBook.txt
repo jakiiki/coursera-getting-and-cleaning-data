@@ -1,0 +1,17 @@
+# Code Book
+
+Raw Data
+The raw data was obtained from accelerometers from Samsung Galaxy S II smartphones worn by 30 volunteers. Each volunteer performed six activities(WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING). The purposes of the exercise was to gather data for Human Activity Recognition using wearable technology such as smart phones. A more complete description of this exercise may be found here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+The data raw data can be found here: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+The zip file contains a comprehensive README.txt file
+
+Data Processing
+The raw data contains training and test data with several measures. For our purposes, we were interested in working with measures that were corresponding to means or standard deviations. The following operations were performed
+
+1) The measures of interest means and standard deviations were extracted from both the training and test datasets
+2) The activities and subject factors were extracted as treated as factors
+3) The two datasets(training and test) were merge
+4) Descriptive labels were given as appropriate to the merged datasets
+5) The average value was computed for each measure per activity and subject to create a new dataset- the tidy dataset
+
